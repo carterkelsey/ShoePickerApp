@@ -9,40 +9,38 @@
 </head>
 
 <body>
+    <!-- we named our wesbite based on its function -->
 	<header>
-		<h1>Shoe picker</h1>
+		<h1>Shoe Picker</h1>
 		<p>Enter your information below to calculate your shoe choice and print your shoe.</p>
 	</header>
-
+<!-- our headers are based on our inputs - weather and price determine what shoes our buyers will purchase -->
 	<center>
-		<label>Day: </label>
-    <select id="day">
-      <option value="Monday">monday</option>
-      <option value="Tuesday">tuesday</option>
-      <option value="Wednesday">wednesday</option>
-      <option value="Thursday">thursday</option>
-      <option value="Friday">friday</option>
-      <option value="Saturday">saturday</option>
-      <option value="Sunday">sunday</option>
+		<label>Weather: </label>
+    <select id="weather">
+        <!-- our id values are sunny and rainy because those are the two possible outputs for our inputs -->
+      <option value="sunny">Sunny</option>
+      <option value="rainy">Rainy</option>
     </select>
     <br>
     <br>
 
-    <label>Age: </label>
-    <input type="text" id="age"><br><br>
+    <label>Price of Shoe: </label>
+    <input type="text" id="price"><br><br>
+    <!-- id is price as that is our second input variable -->
       
-    <label>Discount Code: </label>
-    <input type="text" id="discount"><br><br>
 
-    <button onclick="getTicket()">Create My Ticket!</button>
-
+    <button onclick="getShoe()">Pick my Shoe!</button>
+<!--  after inputing information clicking the button will determine what shoe you are assigned -->
     <div class="outputBox">
       <h2>Admit One</h2>
   	  <img width="20%"src="qr.png">
 		  <p id="output"> </p>
 	  </div>
-
+      <p id="feedback"> </p>
   </center>
     <script src="script.js"></script>
+    <!-- linked together so our files are connected -->
+
   </body>
 </html>
