@@ -1,26 +1,27 @@
 body{
-    font-family: monospace;
+    font-family: 'Times New Roman', Times, serif;
   }
   header{
-    background-color: lightseagreen;
+    background-color: rgb(62, 104, 194);
     padding: 20px;
     margin-bottom: 10px;
+    text-align: center;
   }
   label{
     font-size: 20px;
   }
   select{
-    font-family: monospace;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
   }
   input{
-    font-family: monospace;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
   }
   button{
-    background-color: lightseagreen;
+    background-color: rgb(64, 100, 217);
     padding: 10px;
-    font-family: monospace;
+    font-family: 'Times New Roman', Times, serif;
     border: none;
     margin-bottom: 10px;
   }
@@ -28,7 +29,7 @@ body{
     padding: 10px;
     min-height: 160px;
     width: 60%;
-    outline-color: lightseagreen;
+    outline-color: rgb(48, 83, 196);
     outline-style: solid;
   }
   
