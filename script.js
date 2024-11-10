@@ -25,7 +25,9 @@ function getShoe(weather, price){
 function displayImage(){
 // we created a second function connected to the getShoefunction and the HTML, and then assigned images to display below based upon the output from getShoe
   var shoe = getShoe(document.getElementById("weather").value,document.getElementById("price").value);
+  //  getElementById lets you to select an HTML element using its ID 
   var shoePic;
+  // shoePic is the variable we named our image
   if (shoe== "Fancy Sneaker"){
     shoePic= "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/17d94aa9-1578-4faf-b989-73c0efc580b2/W+NIKE+JOURNEY+RUN.png"
 
