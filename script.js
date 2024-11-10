@@ -9,13 +9,13 @@ function getShoe(weather, price){
       shoe= "Fancy Sneaker"
   
     } else if( price >= 100 && weather=="rainy" ){
-      shoe= "Fancy Rainboot";
+      shoe= "Fancy Rain boot";
     }
     else if( price <100 && weather=="sunny" ){
       shoe= "Cheaper Sneaker";
     } 
     else if( price < 100 && weather=="rainy" ){
-      shoe= "Cheaper Rainboot";
+      shoe= "Cheaper Rain boot";
     }
     console.log(shoe)
     return shoe
@@ -32,7 +32,7 @@ function displayImage(){
     shoePic= "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/17d94aa9-1578-4faf-b989-73c0efc580b2/W+NIKE+JOURNEY+RUN.png"
 
   }
-  else if (shoe== "Fancy Rainboot"){
+  else if (shoe== "Fancy Rain boot"){
     shoePic= "https://m.media-amazon.com/images/I/5154sRYic-L._AC_SL1500_.jpg"
   }
 
@@ -40,7 +40,7 @@ function displayImage(){
     shoePic= "https://vader-prod.s3.amazonaws.com/1711659300-salomonthundercross-6605d898e1fb2.jpg"
 
    }
-  else if (shoe== "Cheaper Rainboot"){
+  else if (shoe== "Cheaper Rain boot"){
     shoePic= "https://m.media-amazon.com/images/I/51lvyikppYL._AC_UY900_.jpg"
 
   }
@@ -56,13 +56,13 @@ document.getElementById("images").setAttribute("src", shoePic)
     if (chosenShoe=="Fancy Sneaker"){
         feedback = "Nike is a good choice!";
     }
-    if (chosenShoe=="Fancy Rainboot"){
+    if (chosenShoe=="Fancy Rain boot"){
       feedback = "Hunter boots are classy and long lasting!";
     }
     if (chosenShoe=="Cheaper Sneaker"){
-      feedback = "Affordable and fasionable!";
+      feedback = "Affordable and fashionable!";
     }
-    if (chosenShoe=="Cheaper Rainboot"){
+    if (chosenShoe=="Cheaper Rain boot"){
       feedback = "Great rain boot for a good cost!";
 
     }   
