@@ -19,7 +19,7 @@ function getShoe(weather, price){
     }
     console.log(shoe)
     return shoe
-// we created an if, else if, else if, else if statement that provide the circumstances for which shoe will be chosen
+// we created a conditional  that provide the circumstances for which shoe will be chosen
 }
 
 function displayImage(){
