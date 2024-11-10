@@ -18,7 +18,7 @@
 	<center>
 		<label>Weather: </label>
     <select id="weather">
-        <!-- our id values are sunny and rainy because those are the two possible outputs for our inputs -->
+        <!-- our values are sunny and rainy because those are the two possible outputs for our inputs -->
       <option value="sunny">Sunny</option>
       <option value="rainy">Rainy</option>
     </select>
@@ -27,18 +27,20 @@
 
     <label>Price of Shoe: </label>
     <input type="text" id="price"><br><br>
-    <!-- id is price as that is our second input variable -->
+    <!-- id is price, it is our second input variable and will be displayed on the website screen by Price of Shoe: -->
       
 
     <button onclick="displayImage()">Pick my Shoe!</button>
 <!--  after inputing information clicking the button will determine what shoe you are assigned -->
     <div class="outputBox">
       <h2>View your shoe below!</h2>
+      <!-- header -->
   	  <img width="60%" src="" id="images">
+      <!-- allows our image to be displayed below , also helped us decide how big we wanted our image to be -->
 		  <p id="output"> </p>
 	  </div>
       <p id="feedback"> </p>
- 
+ <!-- the id tag for feedback because we need our code to display somewhere -->
     <script src="script.js"></script>
     <!-- linked together so our files are connected -->
 
