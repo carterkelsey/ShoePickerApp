@@ -57,18 +57,19 @@ document.getElementById("images").setAttribute("src", shoePic)
         feedback = "Nike is a good choice!";
     }
     if (chosenShoe=="Fancy Rainboot"){
-      feedback = "Hunter boots are long lasting!";
+      feedback = "Hunter boots are classy and long lasting!";
     }
     if (chosenShoe=="Cheaper Sneaker"){
-      feedback = "affordable and fasionable!";
+      feedback = "Affordable and fasionable!";
     }
     if (chosenShoe=="Cheaper Rainboot"){
       feedback = "Great rain boot for a good cost!";
 
     }   
+    document.getElementById("feedback").innerHTML = feedback;
   }
   // if statments that will determine which feedback our customer recieves
-    document.getElementById("feedback").innerHTML = feedback;
+   
   // lastly get results to display on the screen
 
   
