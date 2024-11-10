@@ -1,15 +1,9 @@
+
 function getShoe(weather, price){
 
-    // the user inputs from the text boxes (saved in HTML) and save them to variables
-  // var weather= document.getElementById("weather").value;
-  // var price= document.getElementById("price").value; 
-  // console.log(weather);
-  // console.log(price);
-  // log to make sure our code is not broken in any way and variables we changed into parameters that we could call back later
-  
-    //use variables to determine outputs
+  //  first we created a function and named it based on what we wanted the function to do
   var shoe= "Choose Shoe";
-  
+  // we put our variables as parameters (weather and price) to save them as fixed quantities and then created one more (shoe) which is assigned to the output value aka your chosen shoe
   if(price >= 100 && weather=="sunny" )
     { 
       shoe= "Fancy Sneaker"
@@ -25,9 +19,11 @@ function getShoe(weather, price){
     }
     console.log(shoe)
     return shoe
+    // we created an if, else if, else if, else if statement that provide the circumstances for which shoe will be chosen
 }
-// calling return value function
+
 function displayImage(){
+// we created a second function connected to the getShoefunction and the HTML, and then assigned images to display below based upon the output from getShoe
   var shoe = getShoe(document.getElementById("weather").value,document.getElementById("price").value);
   var shoePic;
   if (shoe== "Fancy Sneaker"){
@@ -38,7 +34,7 @@ function displayImage(){
     shoePic= "https://m.media-amazon.com/images/I/5154sRYic-L._AC_SL1500_.jpg"
   }
 
-   else if (shoe== "Cheaper Sneaker"){
+  else if (shoe== "Cheaper Sneaker"){
     shoePic= "https://vader-prod.s3.amazonaws.com/1711659300-salomonthundercross-6605d898e1fb2.jpg"
 
    }
@@ -48,30 +44,32 @@ function displayImage(){
   }
 document.getElementById("images").setAttribute("src", shoePic)
   getComment(shoe)
-
+// the getElementById above connects back to the HTML displaying the code on the screen
   }
 
   function getComment(chosenShoe){
-  
+  // our third function which is  with the other functions by taking the original output (chosenShoe) and using that result to display a specific comment getComment. 
     var feedback;
+  // we assigned feedback to a variable and then put it in the HTML as an ID to get the feedback to display below the image
     if (chosenShoe=="Fancy Sneaker"){
-        feedback = "Nike is a good choice";
+        feedback = "Nike is a good choice!";
     }
     if (chosenShoe=="Fancy Rainboot"){
-      feedback = "Hunter boots are long lasting";
+      feedback = "Hunter boots are long lasting!";
     }
     if (chosenShoe=="Cheaper Sneaker"){
       feedback = "affordable and fasionable!";
     }
     if (chosenShoe=="Cheaper Rainboot"){
-      feedback = "Great rain boot for a good cost";
+      feedback = "Great rain boot for a good cost!";
 
     }   
-    
-    document.getElementById("feedback").innerHTML = feedback;
   }
+    // if statments that will determine which feedback our customer recieves
+    document.getElementById("feedback").innerHTML = feedback;
+  // lastly get results to display on the screen
 
   
-    //Lastly, set the results to display on the screen. Here is an example, although this will just set the results to be an empty string (you'll need to edit what it equals).
+
   
 
