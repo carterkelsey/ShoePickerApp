@@ -1,49 +1,40 @@
 body{
-  font-family: monospace;
-  background-color: lightgrey;
-}
-
-.outputBox{
-  min-height: 80px;
-  width: 60%;
-  margin-bottom: 10px;
-  background-color: white;
-  padding: 5px;
-}
-
-button{
-  background-color: white;
-  padding: 10px;
-  font-family: monospace;
-  border: none;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  /* font of body text */
+  header{
+    background-color: rgb(62, 104, 194);
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  /* header background color and other information such as where we wanted the text to be aligned */
+  }
+  label{
+    font-size: 20px;
+  }
+  select{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+  }
+  input{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+  /* all of the boxed above show what customizations we made to our websites design */
+  }
+  button{
+    background-color: rgb(64, 100, 217);
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    margin-bottom: 10px;
+  /* size, color, font of button (basically just customized to make the button look the way we wanted it to look ) */
+  }
+  .outputBox{
+    padding: 10px;
+    min-height: 160px;
+    width: 60%;
+    outline-color: rgb(48, 83, 196);
+    outline-style: solid;
+  /* output box where our image is displayed, we wanted it to have a border and be fairly large */
+  }
   
-}
-
-header{
-  background: pink;
-  padding: 20px;
-  margin-bottom: 10px;
-  font-size: 50px;
-}
-
-select{
-  padding: 10px;
-  font-family: monospace;
-  cursor: pointer;
-}
-
-input{
-  padding: 10px;
-  font-family: monospace;
-}
-
-.slider{
-  width: 50%; 
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */ 
-}
-
-/* Mouse-over effects */
-.slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
-}
-
